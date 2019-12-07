@@ -4,7 +4,7 @@ require 'pp'
 pp directors_database
 
 def directors_totals(nds)
-  total = nds[0][]
+  total = nds[0][0][:worldwide_gross]
 
 # that you know what you're starting with!
 
