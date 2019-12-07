@@ -7,13 +7,13 @@ def directors_totals(nds)
   total = 0
   i = 0
 
-  while i < directors_database.length do
+  while i < nds.length do
     ci = 0
-    while ci < directors_database[i].length do
-      inner_len = directors_database[i][ci].length
+    while ci < nds[i].length do
+      inner_len = nds[i][ci].length
       inner_i = 0
       while inner_i < inner_len do
-        total += directors_database[i][ci][inner_i][:worldwide_gross]
+        total += nds[i][ci][inner_i][:worldwide_gross]
         inner_i += 1
       end
       ci += 1
