@@ -4,7 +4,7 @@ require 'pp'
 pp directors_database
 
 def directors_totals(nds)
-  nds = {:name => total}# that you know what you're starting with!
+  nds = {:name => [:moves][:worldwide_gross]}# that you know what you're starting with!
 
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
