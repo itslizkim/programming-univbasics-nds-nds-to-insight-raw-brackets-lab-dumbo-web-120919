@@ -4,7 +4,15 @@ require 'pp'
 pp directors_database
 
 def directors_totals(nds)
-  total = directors_database[0][0][:worldwide_gross]
+  dir_movies = directors_database[0][:movies]
+  index = 0
+
+  while index < dir_totals.length do
+    movie_gross = dir_totals[index][:worldwide_gross]
+    puts movie_gross
+    index +=1
+  end
+
 # that you know what you're starting with!
 
   #
