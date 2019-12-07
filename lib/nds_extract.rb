@@ -8,9 +8,18 @@ def directors_totals(nds)
   i = 0
 
   while i < directors_database.length do
-    column_index = 0
-    while column_index < directors_database[i].length do
-      inner_len = directors_database# Remember, it's always OK to pretty print what you get *in* to make sure
+    ci = 0
+    while ci < directors_database[i].length do
+      inner_len = directors_database[i][ci].length
+      inner_i = 0
+      while inner_i < inner_len do
+        total += directors_database[i][ci][:worldwide_gross]
+        inner_i += 1
+      end
+      ci += 1
+    end
+    i += 1
+  end      # Remember, it's always OK to pretty print what you get *in* to make sure
   # that you know what you're starting with!
   #
   #
