@@ -13,15 +13,15 @@ def directors_totals(nds)
       inner_len = directors_database[i][ci].length
       inner_i = 0
       while inner_i < inner_len do
-        total += directors_database[i][ci][:worldwide_gross]
+        total += directors_database[i][ci][inner_i][:worldwide_gross]
         inner_i += 1
       end
       ci += 1
     end
     i += 1
   end      # Remember, it's always OK to pretty print what you get *in* to make sure
-  # that you know what you're starting with!
-  p total#
+  p total# that you know what you're starting with!
+
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   result = {
