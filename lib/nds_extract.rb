@@ -10,7 +10,7 @@ def directors_totals(nds)
   while i < nds.length do
     ci = 0
     while ci < nds[i].length do
-      inner_len = nds[i][ci].length
+      inner_len = nds[i][ci][:worldwide_gross]
       inner_i = 0
       while inner_i < inner_len do
         total += nds[i][ci][inner_i][:worldwide_gross]
