@@ -4,7 +4,13 @@ require 'pp'
 pp directors_database
 
 def directors_totals(nds)
-  # Remember, it's always OK to pretty print what you get *in* to make sure
+  total = 0
+  i = 0
+
+  while i < directors_database.length do
+    column_index = 0
+    while column_index < directors_database[i].length do
+      inner_len = directors_database# Remember, it's always OK to pretty print what you get *in* to make sure
   # that you know what you're starting with!
   #
   #
